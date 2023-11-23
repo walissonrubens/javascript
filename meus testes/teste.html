@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+    <script>
+        function verificar() {
+            // Obter os valores dos campos de entrada
+            var porcentagem = parseFloat(document.getElementById('ipct').value);
+            var valor = parseFloat(document.getElementById('ivalor').value);
+
+            // Verificar se os valores são válidos
+            if (isNaN(porcentagem) || isNaN(valor)) {
+                document.getElementById('msg').innerHTML = "Por favor, insira valores numéricos válidos.";
+                return;
+            }
+
+            // Calcular a porcentagem
+            var resultado = (valor * porcentagem) / 100;
+
+            // Exibir o resultado
+            document.getElementById('msg').innerHTML = porcentagem + '% de ' + valor + ' é igual a ' + resultado;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>porcento</h1>
+    <div>
+        <p>
+            <label for="ipct">Porcentagem: </label>
+            <input type="number" name="pct" id="ipct">
+        </p>
+        <p>
+            <label for="ivalor">Valor: </label>
+            <input type="number" name="valor" id="ivalor">
+        </p>
+        <input type="button" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="msg"></div>
+</body>
+
+</html>

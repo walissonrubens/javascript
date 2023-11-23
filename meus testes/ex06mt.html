@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgba(129, 5, 129, 0.37), rgba(75, 0, 75, 0.938));
+            font: normal 11pt Arial;
+            background: linear-gradient() center no-repeat fixed;
+            background-size: cover;
+            
+        }
+
+        div#container{
+            background-color: rgba(255, 255, 255, 0.493);
+            margin: auto;
+            width: 400px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #botao{
+            background-color: rgba(0, 0, 0, 0.774);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+        }
+
+        #botao:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #msg{
+            font-weight: bold;
+            padding-top: 25px;
+        }
+
+        h1#titulo{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgba(137, 43, 226, 0.219);
+            border-radius: 10px;
+        }
+
+        h1{
+            font: bold 15pt Arial;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Calculadora de porcentagem</h1>
+    <div id="container">
+        <h1>Quantos % de X:</h1>
+        <p>
+            <label for="ipct">Quanto é %</label>
+            <input type="number" name="pct" id="ipct">
+        </p>
+        <p>
+            <label for="ivalor"> De: </label>
+            <input type="number" name="valor" id="ivalor">
+        </p>
+        <input type="button" value="Verificar" onclick="verificar()" id="botao">
+
+        <div id="msg">
+            O resultado aparecera aqui
+        </div>
+    </div>
+</body>
+
+</html>

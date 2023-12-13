@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(255, 192, 203, 0.733);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1#head{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            margin: -10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h3{
+            font-size: 17px;
+        }
+
+        #container{
+            background-color: rgba(255, 255, 255, 0.74);
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        #btn{
+            background-color: rgb(255, 136, 156);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        #btn:hover{
+            cursor: pointer;
+            background-color: rgb(255, 96, 123);
+        }
+
+        img{
+            width: 500px;
+            height: 500px;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            padding: 10px;
+            background-repeat: no-repeat;
+        }
+
+        #msg{
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 id="head">Casal mais lindo do mundo</h1>
+        <div id="container">
+            <h3>Aperte no botão abaixo</h2>
+            <input type="button" id="btn" value="Botão" onclick="criar()">
+            <h1 id="msg"></h1>
+        </div>
+        <div id="img">
+            
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

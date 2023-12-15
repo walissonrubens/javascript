@@ -5,7 +5,6 @@ do{
 } while (c <= 1)
 
 
-
 /*var c = 1
 while(c <= 6){
     console.log(c)
